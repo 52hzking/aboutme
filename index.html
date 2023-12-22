@@ -15,24 +15,7 @@
         font-family: 'Yozai';
         src: url('font/Yozai-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
       }  
-      @font-face {
-        font-family: 'TanukiMagic';
-        src: url('font/TanukiMagic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-      }  
-      @font-face {
-        font-family: 'JasonHandwriting3';
-        src: url(font/JasonHandwriting3-Regular.woff2);
-      } 
-      @font-face {
-        font-family: 'umeboshi';
-        src: url(font/umeboshi_.ttf);
-      } 
-
-      @font-face {
-        font-family: 'ktegaki';
-        src: url(font/KTEGAKI.ttf);
-      } 
-
+      
       body{
         font-family: Yozai;
         font-weight: 200;
@@ -88,9 +71,19 @@
       border:2px solid #212529;
       color:#212529;
     }
+    .white-border {
+      border-radius:5px 5px 5px 5px/25px 25px 25px 5px;
+      border:2px solid white;
+      color:white;
+    }
     .badge_container .badge{
       margin-bottom: 20px;
     }
+
+    .link_container>div{
+      margin-bottom: 20px;
+    }
+
 </style> 
 
 </head>
@@ -104,14 +97,6 @@
 
         <div style="text-align: center;font-size: 30px;margin-bottom: 20px;">52HZ KING 鯨</div>
 
-       <!-- 
-        <div class="badge_container" style="text-align: center;padding-bottom: 20px;">
-          <span class="badge text-bg-dark">ARTIST</span>
-          <span class="badge text-bg-dark">WEB DEVELOPER</span>
-          <span class="badge text-bg-dark">CONTENT CREATOR</span>
-          <span class="badge text-bg-dark">MV DESIGNER (?)</span>
-        </div>
-      -->  
 
       <div class="badge_container" style="text-align: center;">
         <span class="badge dark-border">#迷因式繪圖</span>
@@ -136,8 +121,13 @@
       
 
         <div id="carouselExample" class="card carousel slide" style="margin-bottom: 40px;">
-            <div class="carousel-inner">
+            <div class="carousel-inner white-border">
               <div class="carousel-item active">
+                <a href="https://twitter.com/52hz_kujira_/status/1738231340045312083" target="_blank">
+                  <img src="img/slide2.png" class="d-block w-100" >
+                </a>
+              </div>
+              <div class="carousel-item">
                 <a href="https://youtu.be/89CDlGcFoaw?si=Ps1GB-E0u9h9niD2" target="_blank">
                 <img src="img/slide1.jpg" class="d-block w-100" >
               </a>
@@ -153,12 +143,41 @@
             </button>
         </div>
 
+        <div class="link_container">
         <div class="card text-white bg-primary link_block">
           <a href="https://shokenhkv.com/product-category/doujinmarket/52hz%e9%af%a8/" target="_blank">
             <i class="fas fa-shopping-cart"></i>週邊現貨 - 初見</a>
-          </div>
+        </div>
+        <div class="card text-white bg-primary link_block">
+          <a href="https://whatsticker.online/p/567762D6nPRSW/HK/zh" target="_blank">
+            <i class="fa-solid fa-note-sticky"></i>月島クロス 同人貼圖包 - Wtsapp/Signal/Telegram</a>
+        </div>
+        <div class="card text-white bg-primary link_block">
+          <a href="https://whatsticker.online/p/629427yccSLYq/HK/zh" target="_blank">
+            <i class="fa-solid fa-note-sticky"></i>月島クロス 同人貼圖包2 - Wtsapp/Signal/Telegram</a>
+        </div>
+        <div class="card text-white bg-primary link_block">
+          <a href="https://drive.google.com/drive/u/2/folders/106A5B89-1u6P9hiJIF5ZAi4zHFU13gtN" target="_blank">
+            <i class="fa-solid fa-image"></i>HKVTUBER 素材（請遵守使用規條下使用）</a>
+        </div>
+        <div class="card text-white bg-primary link_block">
+          <a href="https://52hzking.github.io/9696s/" target="_blank">
+            <i class="fa-solid fa-camera"></i>9696s 黑騎仔紙娃娃 網頁</a>
+        </div>
 
-        <div style="height:40px"></div>
+        <div class="card text-white bg-primary link_block">
+          <a href="https://52hzking.github.io/9696s/" target="_blank">
+            <i class="fa-solid fa-clapperboard"></i> PV作品集</a>
+          <iframe width="100%" src="https://www.youtube.com/embed/videoseries?si=E3DXyFTwfz2hzmL3&amp;list=PLLUTX4MLwOZWMbUvaKriqX3WaeNErpPHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="card text-white bg-primary link_block">
+          <a href="https://trello.com/b/NQSdF4ub/52hz%E6%8E%92%E6%9C%9F" target="_blank">
+            <i class="fa-solid fa-rectangle-list"></i>排單狀態</a>
+        </div>
+        </div>
+
+        <div style="margin-top:40px;height:40px;font-size: 10px;text-align: center;">© 2023 52HZKING</div>
                 
       </div>
     </div>
