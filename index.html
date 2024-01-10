@@ -84,6 +84,32 @@
       margin-bottom: 20px;
     }
 
+    .status{
+      font-size: 75%;
+      font-weight: 700;
+      margin-left: 30px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .status::before{
+      content: "";
+      width:10px;
+      height:10px;
+      border-radius: 50%;
+      position: absolute;
+      margin-top: 4px;
+      margin-left: -15px;
+    }
+
+    .status.red::before{
+      background: #d33333;
+    }
+
+    .status.green::before{
+      background: #6ab94b;
+    }
+
 </style> 
 
 </head>
@@ -97,7 +123,11 @@
 
         <div style="text-align: center;font-size: 30px;margin-bottom: 20px;">52HZ KING 鯨</div>
 
-
+      <div class="status_container" style="text-align: center;">
+        <span class="status green">通販開放中</span>
+        <span class="status red">繪圖委託已關閉</span>
+        <span class="status red">影片委託已關閉</span>
+      </div>
       <div class="badge_container" style="text-align: center;">
         <span class="badge dark-border">#迷因式繪圖</span>
         <span class="badge dark-border">#肝已黑</span>
@@ -124,7 +154,7 @@
             <div class="carousel-inner white-border">
               <div class="carousel-item active">
                 <a href="https://twitter.com/52hz_kujira_/status/1738231340045312083" target="_blank">
-                  <img src="img/slide2.png" class="d-block w-100" >
+                  <img src="img/slide3.png" class="d-block w-100" >
                 </a>
               </div>
               <div class="carousel-item">
