@@ -20,7 +20,7 @@
     <style>
         @font-face {
             font-family: 'Yozai';
-            src: url('font/Yozai-Regular.ttf') format('truetype');
+            src: url('../font/Yozai-Regular.ttf') format('truetype');
             /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
         }
 
@@ -38,41 +38,94 @@
             border: 2px solid #212529;
             color: #212529;
         }
+        .box_title{
+            position: absolute;
+            margin-top: -15px;
+            margin-left: 30px;
+            font-size: 20px;
+        }
+        .img-card-header{
+            padding:0 15px;
+            background-color: white;
+            width: fit-content;
+            position: absolute;
+            z-index: 10;
+            margin: -10px;
+        }
+        .img-card-footer{
+            position: absolute;
+            z-index: 11px;
+            bottom: 20px;
+            right:20px;
+            font-size: 15px;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <div class="dark-border" style="margin:10px;padding:20px">
+    <div style="margin: auto;margin-top: 40px;max-width: 1000px;">
+        <div class="dark-border text-white bg-primary box_title" style="width: fit-content;padding: 0px 20px;">
+            <a href="https://52hzking.github.io/aboutme/" style="color: white;font-size: 14px;position: absolute;top:6px">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <span style="padding-left: 20px;">模版範例</span>
+        </div>
+        <div class="dark-border" style="margin:10px 30px;padding:20px;">
 
-        <div class="container">
-            <div id="img-card-container" class="row row-cols-3">
-                <div class="col">
-                    <div class="card img-card">
-                        <img src="http://fakeimg.pl/300x300">
+            
+
+            <div class="container" style="margin-top: 30px;">
+                <div id="img-card-container" class="row row-cols-3">
+                    <div class="col">
+                        <div class="img-card-header dark-border">嗯 你說的沒錯</div>
+                        <div class="card img-card">
+                            <img src="http://fakeimg.pl/300x300">
+                        </div>
+                        <div class="img-card-footer">*迷因Q版化模版</div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card img-card">
-                        <img src="http://fakeimg.pl/300x300">
+                    <div class="col">
+                        <div class="img-card-header dark-border">屈我啦 屈我啦</div>
+                        <div class="card img-card">
+                            <img src="http://fakeimg.pl/300x300">
+                        </div>
+                        <div class="img-card-footer">*迷因Q版化模版</div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card img-card">
-                        <img src="http://fakeimg.pl/300x300">
+                    <div class="col">
+                        <div class="img-card-header dark-border">傻仔</div>
+                        <div class="card img-card">
+                            <img src="http://fakeimg.pl/300x300">
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card img-card">
-                        <img src="http://fakeimg.pl/300x300">
+                    <div class="col">
+                        <div class="img-card-header dark-border">打CALL</div>
+                        <div class="card img-card">
+                            <img src="http://fakeimg.pl/300x300">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div style="margin-top:40px;height:40px;font-size: 10px;text-align: center;">© 2023 52HZKING</div>
-           
+            <div class="container">
+                <p>注意事項：</p>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa-solid fa-exclamation"></i></span>一次完稿，除畫錯人設以外，不作任易修改</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-exclamation"></i></span>人設和服設會被簡化</li>
+                </ul>
+                <p>使用範圍：</p>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>個人用途</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>直播素材</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>DC貼圖</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-xmark"></i></span>YT/LINE貼圖</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-xmark"></i></span>印刷用</li>
+                </ul>
+            </div>
+
+            <div style="margin-top:40px;height:40px;font-size: 10px;text-align: center;">© 2023 52HZKING</div>
+            
+        </div>
     </div>
 
     <script>
