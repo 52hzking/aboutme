@@ -27,6 +27,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: pwd
+      - run: base_dir = $(pwd)
+      - run: emo_example_dir = "$(pwd)/img/emotes/example"
+      - run: cd emo_example_dir
+      - run: ls
