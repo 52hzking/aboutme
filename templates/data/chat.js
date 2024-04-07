@@ -3,32 +3,28 @@ var chat_options = {
         {
             "Name": "十六夜蒼月 YT會員貼圖",
             "to": "Aotuki",
-            "pack": "Aotuki_emo"
+            "pack": "Aotuki_emo",
+            "no": "12",
+            "commsby": "@Aotuki_channel"
         },
         {
             "Name": "凌仲 YT會員貼圖",
             "to": "LingZhong",
-            "pack": "LingZhong_emo"
+            "pack": "LingZhong_emo",
+            "no": "12",
+            "commsby": "@LingZhongplus"
         }
     ],
     "模版貼圖" : [
         {
             "Name": "醒！ 模版貼圖",
-            "pack": "Wake_emo"
+            "pack": "Wake_emo",
+            "no": "5"
         },
         {
             "Name": "傻仔 模版貼圖",
-            "pack": "Sozai_emo"
-        },
-        {
-            "Name": "打call 模版貼圖",
-            "pack": "call_emo"
+            "pack": "Sozai_emo",
+            "no": "1"
         }
-    ]
-}
-
-var img_list = {
-    "Aotuki_emo" : [
-        
     ]
 }

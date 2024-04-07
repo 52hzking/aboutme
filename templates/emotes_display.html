@@ -84,6 +84,7 @@
         .img-container>img{
             width:32px;
             height:32px;
+            margin:5px;
         }
         
     </style>
@@ -163,7 +164,7 @@
                     var chat_l_second_html = `作品範例︰<ul>`
                     chat_options[_category].forEach(element => {
                         chat_l_second_html += `<li style="text-decoration: underline;" onclick="select_cat('`+element.Name+`','3',this)" 
-                        data-pack="`+element.pack+`">`+element.Name+`</li>`
+                        data-pack="`+element.pack+`" data-no="`+element.no+`" data-commsby="`+element.commsby+`">`+element.Name+`</li>`
                     });
                     chat_l_second_html+= `</ul>`
 
@@ -171,7 +172,7 @@
 
                     break;
                 case "3":
-                    chat_l_third_html = get_emotes(_category,_elm.dataset.pack)
+                    chat_l_third_html = get_emotes(_category,_elm.dataset.pack,_elm.dataset.no,_elm.dataset.commsby)
 
                     if (chat_l_third_html == ""){
                         chat_l_third_html = "<span>暫無範例</span>"
@@ -198,17 +199,20 @@
             chats_container_elm.innerHTML += append_HTML
         }
 
-        function get_emotes(_name,_pack){
+        function get_emotes(_name,_pack,_no,_commsby){
 
             var HTML_content = ""
 
-            var get_img_list = img_list[_pack]
-
-            if (get_img_list != undefined){
-                get_img_list.forEach(element => {
-                    HTML_content += `<span class="img-container"><img src="../img/emotes/example/`+_pack+`/`+element+`"></span>`
-                });
+            if (_no != "undefined"){
+                for(l=1;l<parseInt(_no)+1;l++){
+                    HTML_content += `<span class="img-container"><img src="../img/emotes/example/`+_pack+`/`+l.toString()+`.PNG"></span>`
+                }
             }
+
+            if (_commsby != "undefined"){
+                HTML_content += `<div style="font-size:10px">Comms by: `+_commsby+`</div>`
+            }
+
             return HTML_content
 
         }
