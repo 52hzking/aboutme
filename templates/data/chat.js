@@ -29,6 +29,6 @@ var chat_options = {
 
 var img_list = {
     "Aotuki_emo" : [
-        "1.png","2.png","3.png"
+        
     ]
 }

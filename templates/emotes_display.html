@@ -144,12 +144,9 @@
         function init_chat(_layer){
 
             var all_chat = document.getElementsByClassName("chat-container")
-
-            for (var i = 0; i < all_chat.length; i++) {
-                console.log(all_chat[i])
-                if (all_chat[i].dataset.layer > _layer){
-                    all_chat[i].remove()
-                }
+            max_layer = parseInt(all_chat[all_chat.length-1].dataset.layer)
+            for (var i = parseInt(_layer); i < max_layer+1; i++) {
+                document.querySelectorAll(`.chat-container[data-layer="`+i+`"]`).forEach(e => e.remove());
             }
         }
 
@@ -157,7 +154,7 @@
 
         function select_cat(_category,_layer,_elm){
 
-            console.log(_layer)
+            init_chat(_layer)
 
             add_new_conversation('right',_category,_layer)
 
@@ -171,6 +168,7 @@
                     chat_l_second_html+= `</ul>`
 
                     add_new_conversation('left', chat_l_second_html,'2')
+
                     break;
                 case "3":
                     chat_l_third_html = get_emotes(_category,_elm.dataset.pack)
@@ -182,6 +180,8 @@
                     add_new_conversation('left', chat_l_third_html,'3')
                     break;
             }
+
+            
             
         }
 
